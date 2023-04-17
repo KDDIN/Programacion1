@@ -30,7 +30,7 @@ begin
             write (oracion,'p',oracion)
 
         else 
-            write (oracion)
+            write (oracion);
 
         else if oracion = 'u' then
             if (esVocal(vocal1)) and (vocal1 = 'e') or (vocal1 = 'i') then
