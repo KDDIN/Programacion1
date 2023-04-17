@@ -16,7 +16,6 @@ end;
 
 begin
 
-    Writeln('Ingrese una oracion:');
     read(oracion);
     vocal1 := ' ';
 
