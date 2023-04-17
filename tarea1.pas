@@ -27,7 +27,7 @@ begin
 
         write (oracion);
         
-        if (esVocal(oracion)) and (oracion <> 'u') then
+        if (esVocal(oracion)) and (oracion <> 'u') and (lacu <> 'q') then
             write ('p',oracion)
 
         else if (lacu = 'q') and (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
