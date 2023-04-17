@@ -25,14 +25,15 @@ begin
     vocal1 := ' ';
 
     repeat
+        if (vocal1 = 'u') and (oracion <> 'e') and (oracion <> 'i') then
+            write('p',vocal1);
         write (oracion);
         
         if (esVocal(oracion)) and (oracion <> 'u') then
             write ('p',oracion)
         else if (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
-            write(vocal1,oracion,'p',oracion)
-        else if (vocal1 = 'u') and (oracion <> 'e') and (oracion <> 'i') then
-            write('p',vocal1);
+            write(vocal1,oracion,'p',oracion);
+
         
         
         vocal1 := oracion;
