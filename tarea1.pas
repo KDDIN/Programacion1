@@ -31,7 +31,7 @@ begin
             write ('p',oracion)
         else if (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
             write(vocal1,oracion,'p',oracion)
-        else 
+        else if (vocal1 = 'u') and (oracion <> 'e') and (oracion <> 'i') then
             write('p',vocal1);
         
         
