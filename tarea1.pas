@@ -22,12 +22,12 @@ begin
 
     repeat
 
-        if (vocal1 = 'u') and (oracion <> 'e') and (oracion <> 'i') then
+        if (lacu <> 'q') and (vocal1 = 'u') and (oracion <> 'e') and (oracion <> 'i') then
             write('p',vocal1);
 
         write (oracion);
-        
-        if (esVocal(oracion)) and (oracion <> 'u') and (lacu <> 'q') then
+
+        if (esVocal(oracion)) and (oracion <> 'u') then
             write ('p',oracion)
 
         else if (lacu = 'q') and (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
