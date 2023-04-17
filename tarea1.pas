@@ -4,7 +4,7 @@ var oracion,vocal1: char;
 
 function esVocal(c: char): boolean;
 
-begin
+begin//xD
 
     if (c = 'a') or (c = 'e') or (c = 'i')
     or (c = 'o') or (c = 'u') then
