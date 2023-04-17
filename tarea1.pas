@@ -31,7 +31,7 @@ begin
             if (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
                 write('p',oracion)
             else
-                write('p',oracion);
+                write(oracion,'p');
         end;
         vocal1 := oracion;
         write (oracion);
