@@ -2,7 +2,7 @@ program tarea1;
 
 //const ...;
 
-var a;
+var a: char;
 
 function esVocal(c: char): boolean;
 
