@@ -34,7 +34,7 @@ begin
                 write('p',oracion);
         end;
         vocal1 := oracion;
-        write (oracion)
+        read (oracion)
 
     until oracion = '.';
 
