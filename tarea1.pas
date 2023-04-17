@@ -12,7 +12,7 @@ var a;
 //end;
 
 begin
-a := 'a';
+a := 'b';
 writeln(a)
 
     
