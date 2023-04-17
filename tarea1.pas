@@ -26,7 +26,7 @@ begin
 
     repeat
         
-        if esVocal(oracion) and oracion <> 'u' then
+        if (esVocal(oracion)) and (oracion <> 'u') then
             write (oracion,'p',oracion)
         else if oracion = 'u' then
             if (esVocal(vocal1)) and (vocal1 = 'e') or (vocal1 = 'i') then
