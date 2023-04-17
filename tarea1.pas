@@ -31,15 +31,17 @@ begin
             write ('p',oracion)
 
         else if (lacu = 'q') and (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
-            write(vocal1,oracion,'p',oracion);
+            write('p',oracion);
 
         lacu := vocal1;
         vocal1 := oracion;
         read(oracion);
 
+
+
     until oracion = '.';
 
     
-
+            // s q u e l
 
 end.
