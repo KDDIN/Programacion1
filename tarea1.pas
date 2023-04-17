@@ -17,7 +17,7 @@ begin
 end;
 
 begin
-a := 'b';
+a := 'c';
 writeln(a)   
 
     
