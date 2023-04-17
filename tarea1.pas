@@ -30,7 +30,7 @@ begin
         begin
             
             if (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
-                write('p',vocal1)
+                write(oracion,'p')
             else
                 write('p',vocal1);
         end
