@@ -26,22 +26,17 @@ begin
 
     repeat
         
-        if (esVocal(vocal1)) then
-        begin
-            
-            if (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
-                write(oracion,'p')
-            else
-                write('p',vocal1);
-        end
-        else
-            write(oracion);
-
-
-
+        if esVocal(oracion) and oracion <> 'u' then
+            write (oracion,'p',oracion)
+        else if oracion = 'u' then
+            if (esVocal(vocal1)) and (vocal1 = 'e') or (vocal1 = 'i') then
+                write('u',vocal1,'p',vocal1);
+        else 
+            write (oracion);
+        
         vocal1 := oracion;
-       // write (oracion);
-        read (oracion)
+        read(oracion);
+
 
     until oracion = '.';
 
