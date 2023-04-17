@@ -4,16 +4,21 @@ program tarea1;
 
 var a;
 
-//function esVocal(c: char): boolean;
+function esVocal(c: char): boolean;
 
-//begin
+begin
 
+    if (c = 'a') or (c = 'e') or (c = 'i')
+    or (c = 'o') or (c = 'u') then
+        esVocal := true
+    else
+        esVocal := false;
  
-//end;
+end;
 
 begin
 a := 'b';
-writeln(a)
+writeln(a)   
 
     
 
