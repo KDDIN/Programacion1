@@ -2,7 +2,7 @@ program tarea1;
 
 //const ...;
 
-var a: char;
+var oracion,vocal1: char;
 
 function esVocal(c: char): boolean;
 
@@ -16,9 +16,27 @@ begin
  
 end;
 
+
+
 begin
-a := 'c';
-writeln(a)   
+
+    Writeln('Ingrese una oracion:');
+    read(oracion);
+    vocal1 := ' ';
+
+    repeat
+        
+        if (esVocal(oracion)) then
+        begin
+            if (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
+                write('p',oracion)
+            else
+                write('p',oracion);
+        end;
+        vocal1 := oracion;
+        write (oracion)
+        
+    utnil oracion := '.';
 
     
 
