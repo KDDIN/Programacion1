@@ -36,7 +36,7 @@ begin
         vocal1 := oracion;
         write (oracion)
 
-    until oracion := '.';
+    until oracion = '.';
 
     
 
