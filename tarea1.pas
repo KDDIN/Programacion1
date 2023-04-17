@@ -22,7 +22,7 @@ begin
 
     repeat
 
-        if (lacu <> 'q') and (vocal1 = 'u') and (oracion <> 'e') and (oracion <> 'i') then
+        if (lacu <> 'q') and (vocal1 = 'u') {and (oracion <> 'e') and (oracion <> 'i')} then
             write('p',vocal1);
 
         write (oracion);
