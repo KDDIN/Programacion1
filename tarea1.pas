@@ -29,8 +29,8 @@ begin
         
         if (esVocal(oracion)) and (oracion <> 'u') then
             write ('p',oracion)
-        else if (vocal1 = 'u') and (vocal1 = 'e') or (vocal1 = 'i') then
-            write('u',oracion,'p',oracion);
+        else if (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
+            write(vocal1,oracion,'p',oracion);
         
         
         vocal1 := oracion;
