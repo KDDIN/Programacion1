@@ -1,6 +1,6 @@
 program tarea1;
 
-var oracion,vocal1: char;
+var oracion,vocal1,lacu: char;
 
 function esVocal(c: char): boolean;
 
@@ -18,6 +18,7 @@ begin
 
     read(oracion);
     vocal1 := ' ';
+    lacu := ' ';
 
     repeat
 
@@ -29,9 +30,10 @@ begin
         if (esVocal(oracion)) and (oracion <> 'u') then
             write ('p',oracion)
 
-        else if (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
+        else if (lacu = 'q') and (vocal1 = 'u') and (oracion = 'e') or (oracion = 'i') then
             write(vocal1,oracion,'p',oracion);
-        
+
+        lacu := vocal1;
         vocal1 := oracion;
         read(oracion);
 
