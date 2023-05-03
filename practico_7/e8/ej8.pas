@@ -11,12 +11,12 @@ begin
 
     divisor := 2;
 
-    if (primo mod 2 <> 0) and (primo >= 2) then
+    if (primo mod 2 <> 0) and (primo = 2) then
     begin
 
         repeat
             divisor := divisor +1;
-        until (primo mod divisor = 0) or (primo <= divisor);
+        until (primo mod divisor = 0) or (primo = divisor);
 
         esPrimo := (not (primo mod divisor = 0) or (primo = divisor));
 
@@ -31,7 +31,7 @@ begin
 
     Write('Ingrese un numero: ');
     Readln(n);
-    if esPrimo(n) or n = 2 then
+    if (esPrimo(n)) or (n = 2) then
         writeln(n,' Es primo')
     else
         writeln(n,' No es primo');
