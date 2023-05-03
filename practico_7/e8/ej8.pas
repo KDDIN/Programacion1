@@ -15,7 +15,7 @@ begin
     begin
 
         repeat
-            primo := primo +1;
+            divisor := divisor +1;
         until (primo mod divisor = 0) or (primo = divisor);
 
         esPrimo := (not (primo mod divisor = 0) or (primo = divisor));
