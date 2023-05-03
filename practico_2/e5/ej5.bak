@@ -1,0 +1,8 @@
+Program ejercicio5;
+
+
+begin
+
+   write(ord(a));
+
+end.
