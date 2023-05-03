@@ -11,7 +11,7 @@ begin
 
     divisor := 2;
 
-    if (primo mod 2 <> 0) and (primo => 2) then
+    if (primo mod 2 <> 0) and (primo >= 2) then
     begin
 
         repeat
