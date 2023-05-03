@@ -32,7 +32,7 @@ begin
     Write('Ingrese un numero: ');
     Readln(n);
     if esPrimo(n) then
-        writeln(n,' Es primo');
+        writeln(n,' Es primo')
     else
         writeln(n,' No es primo');
 
