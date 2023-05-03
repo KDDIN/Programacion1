@@ -2,7 +2,7 @@ program practico7_ejercicio8;
 
 var n:integer;
 
-{Inicio de la funcion}
+    {Inicio de la funcion}
 function esPrimo (primo:integer) : boolean;
 
 var divisor: Integer;
@@ -26,7 +26,7 @@ begin
 
 end;
 
-{Inicio del programa}
+    {Inicio del programa}
 begin
 
     Write('Ingrese un numero: ');
