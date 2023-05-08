@@ -16,7 +16,7 @@ begin
 
     indice := 2;
 
-    while (indice -1 <= N) and (cadn[indice-1] = cadn[indice] -1) do
+    while ((indice -1) <= N) and (cadn[(indice-1)] = cadn[indice] -1) do
         indice := indice + 1;
 
     ordenado := indice -1 > N;
