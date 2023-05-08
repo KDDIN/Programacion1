@@ -5,11 +5,10 @@ const N = 5;
 type CadenaN = array [1..N] of integer;
 
 var
-    numero,cant,r: integer;
+    numero,cant_final,r: integer;
     fila: CadenaN;
  
-{Escriba la funcion llamada cantMayores que, dados un arreglo de enteros y un entero num, 
-devuelve la cantidad de valores almacenados en el arreglo que son mayores que num.}
+{Inicio de la funcion}
 function cantMayores(cadn:CadenaN; num:integer) : integer;
 
 var i,cantidad : integer;
@@ -30,14 +29,14 @@ end;
 
 begin
 
-    for r := 1 to N do
+    for r := 1 to N do {llenamos el array con numeros del 1 al 5}
     begin
         fila[r] := r;
     end;
 
     write('Ingrese 1 numero: ');
     readln(numero);
-    cant := cantMayores(fila,numero);
-    writeln('La cantidad de numeros en el arreglo mayor al ingresado son: ',cant);
+    cant_final := cantMayores(fila,numero);
+    writeln('La cantidad de numeros en el arreglo mayor al ingresado son: ',cant_final);
 
 end.
