@@ -22,7 +22,7 @@ begin
         if cadn[i] > num then
             cantidad := cantidad + 1;
     end;
-        cantMayores := cantidad;
+    cantMayores := cantidad;
 end;
 
 {inicio del programa}
