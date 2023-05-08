@@ -14,12 +14,12 @@ var indice: integer;
 
 begin
 
-    indice := 2;
+    indice := 3;
 
-    while ((indice -1) <= N) and (cadn[(indice-1)] = cadn[indice] -1) do
+    while (indice -2 <= N) and (cadn[indice-2] = cadn[indice-1] -1) do
         indice := indice + 1;
 
-    ordenado := indice -1 > N;
+    ordenado := indice -2 > N;
 
 end;
 
