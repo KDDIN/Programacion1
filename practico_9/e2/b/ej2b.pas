@@ -31,6 +31,7 @@ begin
         fila[r] := r;
     end;
 
+    fila[3] := 2;
     if ordenado(fila) then
         Writeln('Esta ordenado')
     else
