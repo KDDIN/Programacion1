@@ -32,7 +32,7 @@ begin
     end;
 
     if ordenado(fila) then
-        Writeln('Esta ordenado');
+        Writeln('Esta ordenado')
     else
         Writeln('No esta ordenado');
 
