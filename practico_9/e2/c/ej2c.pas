@@ -8,15 +8,10 @@ var
     r,v,p: integer;
     fila: CadenaN;
 
-{indice := N;
-for i := N-1 downto 1 do
-    if arreglo[i] <= arreglo[indice] then
-        indice := i
-}
 {Inicio del procedimiento}
 procedure maxValorPos(cadn:CadenaN; VAR valor, pos:integer);
 
-var i : integer;
+var i: integer;
 
 begin
 
@@ -35,7 +30,7 @@ end;
 {Inicio del programa}
 begin
 
-    for r := N downto 1 do {llenamos el array con numeros del 1 al 5}
+    for r := 1 to N do {llenamos el array con numeros del 1 al 5}
     begin
         fila[r] := r;
     end;
