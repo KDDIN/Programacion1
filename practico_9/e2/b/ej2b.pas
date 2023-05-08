@@ -7,6 +7,7 @@ type CadenaN = array [1..N] of integer;
 var
     r: integer;
     fila: CadenaN;
+
 {inicio de la funcion}
 function ordenado(cadn:CadenaN) : boolean;
 
@@ -15,7 +16,7 @@ var indice: integer;
 begin
 
     indice := 1;
-
+    {Valida para el indice + 1 y compara que el indice y el siguiente sean consecuentes}
     while (indice +1 <= N) and (cadn[indice] = cadn[indice+1] -1 ) do
         indice := indice + 1;
 
@@ -31,7 +32,7 @@ begin
         fila[r] := r;
     end;
 
-    fila[3] := 2;
+    {fila[3] := 5:}
     if ordenado(fila) then
         Writeln('Esta ordenado')
     else
