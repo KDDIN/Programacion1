@@ -30,7 +30,7 @@ procedure TransponerMatriz (var matriz:TipoMatriz);
 var i,j,reserva:integer;
 begin
 
-    for i := 1 to fila do
+    for i := 1 to filas do
         for j := 1 to columnas do
         begin
 
