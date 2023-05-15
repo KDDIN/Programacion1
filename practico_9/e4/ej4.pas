@@ -66,7 +66,7 @@ begin
     begin
         Writeln;
         for j := 1 to columnas do
-            write('[',matriz[i,j],']');
+            writeln('[',matriz[i,j],']');
         
     end;
 end;
