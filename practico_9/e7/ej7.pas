@@ -65,7 +65,20 @@ begin
 end;
 
 {Mostrar matrices}
-procedure MostrarMatriz (matriz:MatrizMP);
+procedure MostrarMatriz1 (matriz:MatrizMP);
+var i,j : integer;
+begin
+
+    for i := 1 to M do
+    begin
+        Writeln;
+        for j := 1 to P do
+            write(matriz[i,j]);
+        
+    end;
+end;
+
+procedure MostrarMatriz2 (matriz:MatrizMN);
 var i,j : integer;
 begin
 
@@ -78,27 +91,14 @@ begin
     end;
 end;
 
-procedure MostrarMatriz (matriz:MatrizMN);
+procedure MostrarMatriz3 (matriz:MatrizNP);
 var i,j : integer;
 begin
 
-    for i := 1 to M do
+    for i := 1 to N do
     begin
         Writeln;
-        for j := 1 to N do
-            write(matriz[i,j]);
-        
-    end;
-end;
-
-procedure MostrarMatriz (matriz:MatrizNP);
-var i,j : integer;
-begin
-
-    for i := 1 to M do
-    begin
-        Writeln;
-        for j := 1 to N do
+        for j := 1 to P do
             write(matriz[i,j]);
         
     end;
@@ -108,13 +108,13 @@ end;
 begin
 
 CargarMatrizEntradaMN(tabla1);
-MostrarMatriz(tabla1);
+MostrarMatriz2(tabla1);
 Writeln;
 CargarMatrizEntradaNP(tabla2);
-MostrarMatriz(tabla2);
+MostrarMatriz3(tabla2);
 Writeln;
-productoMatrices(tabla3);
-MostrarMatriz(tabla3);
+productoMatrices(tabla1,tabla2,tabla3);
+MostrarMatriz1(tabla3);
 Writeln;
 
 end.
