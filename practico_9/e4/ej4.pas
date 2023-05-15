@@ -35,8 +35,8 @@ begin
         begin
 
             reserva := matriz[i,j];
-            matriz[i,j] := matriz[(columnas+1) - j];
-            matriz[(columnas+1) - j] := reserva;            
+            matriz[i,j] := matriz[i,(columnas+1) - j];
+            matriz[i,(columnas+1) - j] := reserva;            
 
         end;
 
