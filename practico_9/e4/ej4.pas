@@ -32,13 +32,7 @@ begin
 
     for i := 1 to filas do
         for j := 1 to columnas do
-        begin
-
-            reserva := matriz[i,j];
-            matriz[i,j] := matriz[i,(columnas+1) - j];
-            matriz[i,(columnas+1) - j] := reserva;            
-
-        end;
+            matriz[i,j] := 1;
 
 end;
 
