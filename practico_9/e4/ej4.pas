@@ -1,8 +1,8 @@
 Program P9E4;
 
 const 
-    filas = 3; 
-    columnas = 3;
+    filas = 5; 
+    columnas = 5;
 
 type 
     TipoMatriz = array [1..filas, 1..columnas] of integer;
