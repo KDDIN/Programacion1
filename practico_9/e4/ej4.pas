@@ -27,14 +27,16 @@ end;
 
 {Metodo para transponer una matriz}
 procedure TransponerMatriz (var matriz:TipoMatriz);
-var i,j:integer;
+var i,j,reserva:integer;
 begin
 
-    for i := 1 to filas do
+    for i := 1 to (filas div 2) do
         for j := 1 to columnas do
         begin
-            matriz[i,j] := matriz[j,i];
-            write(i,' ',j,',');
+            reserva := matriz [i,j];
+            matriz[i,j] := matriz[j,matriz[(filas + 1) - j]];
+            matriz[i,(filas + 1) - j]
+
         end;
         
 end;
