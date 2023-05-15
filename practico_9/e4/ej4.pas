@@ -9,7 +9,6 @@ type
 
 var
     Tabla:TipoMatriz;
-   { m,n:Integer;}
 
 {METODOS}
 
@@ -41,6 +40,20 @@ begin
         
 end;
 
+{Metodo para transponer una posicion m,n cualesquiera de una matriz}
+procedure TransponerMatrizPorMyN (var matriz:TipoMatriz);
+var m,n:integer;
+begin
+
+    Write('Ingrese m y n: ');
+    Readln(m,n);
+    if (m < 1) or (m > filas) or (n < 1) or (n > columnas) then
+        Writeln('El valor ingresado es incorrecto')
+    else
+        matriz[m,n] := matriz[n,m];
+
+end;
+
 {Mostrar la matriz}
 procedure MostrarMatriz (matriz:TipoMatriz);
 var i,j : integer;
@@ -62,6 +75,9 @@ CargarMatrizEntrada(Tabla);
 MostrarMatriz(Tabla);
 Writeln;
 TransponerMatriz(Tabla);
+MostrarMatriz(Tabla);
+Writeln;
+TransponerMatrizPorMyN(Tabla);
 MostrarMatriz(Tabla);
 Writeln;
 end.
