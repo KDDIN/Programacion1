@@ -35,8 +35,8 @@ var
     i,j:integer;
 begin
     Write('Ingrese los datos de una matriz 3 x 2: ');
-    for i := 1 to M do
-        for j := 1 to N do
+    for i := 1 to N do
+        for j := 1 to P do
             Read(matriz[i,j]);
 
 end;
