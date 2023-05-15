@@ -23,8 +23,8 @@ var
     i,j:integer;
 begin
     Write('Ingrese los datos de una matriz 3 x 3: ');
-    for i := 1 to filas do
-        for j := 1 to columnas do
+    for i := 1 to M do
+        for j := 1 to N do
             Read(matriz[i,j]);
 
 end;
@@ -35,8 +35,8 @@ var
     i,j:integer;
 begin
     Write('Ingrese los datos de una matriz 3 x 2: ');
-    for i := 1 to filas do
-        for j := 1 to columnas do
+    for i := 1 to M do
+        for j := 1 to N do
             Read(matriz[i,j]);
 
 end;
@@ -54,7 +54,7 @@ end;
 
 {Metodo}
 procedure productoMatrices(a:MatrizMN; b:MatrizNP; VAR c:MatrizMP);
-var i,j,k:integer
+var i,j,k:integer;
 begin
     InicializarMatriz(c);
     for i := 1 to M do
@@ -85,6 +85,8 @@ CargarMatrizEntradaMN(tabla1);
 MostrarMatriz(tabla1);
 Writeln;
 CargarMatrizEntradaNP(tabla2);
+Writeln;
+productoMatrices(tabla3);
 Writeln;
 
 end.
