@@ -27,13 +27,13 @@ end;
 
 {Metodo para transponer una matriz}
 procedure TransponerMatriz (var matriz:TipoMatriz);
-var i,j,reserva:integer;
+var i,j:integer;
 begin
 
     for i := 1 to filas do
         for j := 1 to columnas do
-            matriz[i,j] := 1;
-
+            matriz[i,j] := matriz[j,i];
+        
 end;
 
 {Mostrar la matriz}
