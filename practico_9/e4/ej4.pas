@@ -32,7 +32,10 @@ begin
 
     for i := 1 to filas do
         for j := 1 to columnas do
+        begin
             matriz[i,j] := matriz[j,i];
+            write(i,' ',j,',');
+        end;
         
 end;
 
@@ -44,10 +47,7 @@ begin
     begin
         Writeln;
         for j := 1 to columnas do
-        begin
             write('[',matriz[i,j],']');
-            write(i,' ',j);
-        end;
         
     end;
 end;
