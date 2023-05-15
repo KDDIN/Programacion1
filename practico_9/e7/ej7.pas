@@ -69,10 +69,36 @@ procedure MostrarMatriz (matriz:MatrizMP);
 var i,j : integer;
 begin
 
-    for i := 1 to filas do
+    for i := 1 to M do
     begin
         Writeln;
-        for j := 1 to columnas do
+        for j := 1 to N do
+            write(matriz[i,j]);
+        
+    end;
+end;
+
+procedure MostrarMatriz (matriz:MatrizMN);
+var i,j : integer;
+begin
+
+    for i := 1 to M do
+    begin
+        Writeln;
+        for j := 1 to N do
+            write(matriz[i,j]);
+        
+    end;
+end;
+
+procedure MostrarMatriz (matriz:MatrizNP);
+var i,j : integer;
+begin
+
+    for i := 1 to M do
+    begin
+        Writeln;
+        for j := 1 to N do
             write(matriz[i,j]);
         
     end;
@@ -85,8 +111,10 @@ CargarMatrizEntradaMN(tabla1);
 MostrarMatriz(tabla1);
 Writeln;
 CargarMatrizEntradaNP(tabla2);
+MostrarMatriz(tabla2);
 Writeln;
 productoMatrices(tabla3);
+MostrarMatriz(tabla3);
 Writeln;
 
 end.
