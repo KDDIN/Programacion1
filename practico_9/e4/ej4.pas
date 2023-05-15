@@ -21,7 +21,7 @@ begin
 
     for i := 1 to filas do
         for j := 1 to columnas do
-            Readln(matriz[i,j]);
+            Read(matriz[i,j]);
 
 end;
 
@@ -60,6 +60,7 @@ begin
 
 CargarMatrizEntrada(Tabla);
 MostrarMatriz(Tabla);
+Writeln;
 TransponerMatriz(Tabla);
 MostrarMatriz(Tabla);
 Writeln;
