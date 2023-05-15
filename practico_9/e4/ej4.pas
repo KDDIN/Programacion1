@@ -25,35 +25,35 @@ begin
 end;
 
 {Metodo para transponer una matriz}
-procedure TransponerMatriz (var matriz:TipoMatriz);
-var i,j,reserva:integer;
+procedure IntercambiarFilasMyN (var matriz:TipoMatriz; m,n:Integer);
+var i,reserva:integer;
 begin
 
-    for i := 1 to (filas - 1) do
-        for j := (1 + i) to columnas do
-        begin
-            reserva := matriz [i,j];
-            matriz[i,j] := matriz[j,i];
-            matriz[j,i] := reserva;
+    for i := 1 to m do
+    begin
 
-        end;
-        
+        reserva := matriz[m,i];
+        matriz[m,i] := matriz[n,i];
+        matriz[n,i] ;= reserva;
+
+    end;
+
 end;
 
 {Metodo para transponer una posicion m,n cualesquiera de una matriz}
-procedure TransponerMatrizPorMyN (var matriz:TipoMatriz);
+procedure CargaryTransponer (var matriz:TipoMatriz);
 var m,n,reserva:integer;
 begin
 
+    CargarMatrizEntrada(matriz);
     Write('Ingrese m y n: ');
     Read(m,n);
+
     if (m < 1) or (m > filas) or (n < 1) or (n > columnas) then
         Writeln('El valor ingresado es incorrecto')
     else
     begin
-        reserva := matriz[m,n];
-        matriz[m,n] := matriz[n,m];
-        matriz[n,m] := reserva;
+        IntercambiarFilasMyN(matriz,m,n)
     end;
 
 end;
@@ -62,6 +62,7 @@ end;
 procedure MostrarMatriz (matriz:TipoMatriz);
 var i,j : integer;
 begin
+
     for i := 1 to filas do
     begin
         Writeln;
@@ -71,17 +72,11 @@ begin
     end;
 end;
 
-
 {Inicio del codigo principal}
 begin
 
-CargarMatrizEntrada(Tabla);
-MostrarMatriz(Tabla);
-Writeln;
-TransponerMatriz(Tabla);
-MostrarMatriz(Tabla);
-Writeln;
-TransponerMatrizPorMyN(Tabla);
-MostrarMatriz(Tabla);
-Writeln;
+    CargaryTransponer(Tabla);
+    MostrarMatriz(Tabla);
+    Writeln;
+
 end.
