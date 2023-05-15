@@ -34,8 +34,8 @@ begin
         for j := (1 + i) to columnas do
         begin
             reserva := matriz [i,j];
-            matriz[i,j] := matriz[i,matriz[i,(filas + 1) - j]];
-            matriz[i,(filas + 1) - j] := reserva;
+            matriz[i,j] := matriz[j,i];
+            matriz[j,i] := reserva;
 
         end;
         
