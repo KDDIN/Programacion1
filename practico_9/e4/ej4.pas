@@ -42,7 +42,7 @@ end;
 
 {Metodo para transponer una posicion m,n cualesquiera de una matriz}
 procedure TransponerMatrizPorMyN (var matriz:TipoMatriz);
-var m,n:integer;
+var m,n,reserva:integer;
 begin
 
     Write('Ingrese m y n: ');
@@ -50,7 +50,11 @@ begin
     if (m < 1) or (m > filas) or (n < 1) or (n > columnas) then
         Writeln('El valor ingresado es incorrecto')
     else
+    begin
+        reserva := matriz[m,n];
         matriz[m,n] := matriz[n,m];
+        matriz[n,m] := reserva;
+    end;
 
 end;
 
