@@ -1,8 +1,8 @@
 Program P9E4;
 
 const 
-    filas = 5; 
-    columnas = 5;
+    filas = 3; 
+    columnas = 3;
 
 type 
     TipoMatriz = array [1..filas, 1..columnas] of integer;
@@ -35,7 +35,7 @@ begin
         begin
 
             reserva := matriz[i,j];
-            matriz := matriz[(columnas+1) - j];
+            matriz[i,j] := matriz[(columnas+1) - j];
             matriz[(columnas+1) - j] := reserva;            
 
         end;
@@ -59,6 +59,8 @@ end;
 begin
 
 CargarMatrizEntrada(Tabla);
+MostrarMatriz(Tabla);
+TransponerMatriz(Tabla);
 MostrarMatriz(Tabla);
 Writeln;
 end.
