@@ -30,7 +30,7 @@ procedure TransponerMatriz (var matriz:TipoMatriz);
 var i,j,reserva:integer;
 begin
 
-    for i := 1 to (filas div 2 + 1) do
+    for i := 1 to (filas - 1) do
         for j := (1 + i) to columnas do
         begin
             reserva := matriz [i,j];
