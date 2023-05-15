@@ -46,7 +46,7 @@ var m,n,reserva:integer;
 begin
 
     Write('Ingrese m y n: ');
-    Readln(m,n);
+    Read(m,n);
     if (m < 1) or (m > filas) or (n < 1) or (n > columnas) then
         Writeln('El valor ingresado es incorrecto')
     else
