@@ -36,5 +36,7 @@ begin
 
 end;
 
-
+begin
+    write('hola mundo');
+end.
 
