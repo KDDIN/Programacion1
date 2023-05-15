@@ -31,7 +31,7 @@ var i,j,reserva:integer;
 begin
 
     for i := 1 to (filas div 2) do
-        for j := 1 to columnas do
+        for j := (1 + i) to columnas do
         begin
             reserva := matriz [i,j];
             matriz[i,j] := matriz[i,matriz[i,(filas + 1) - j]];
