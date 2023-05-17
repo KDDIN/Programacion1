@@ -38,7 +38,20 @@ begin
     write ('Ingrese un mes del 1 al 12: ');
     read (numeromes);
     mes := TipoMes(numeromes -1);
-    Writeln(mes);
+    case mes of
+        enero: write('enero');
+        febrero: write('febrero');
+        marzo: write('marzo');
+        abril: write('abril');
+        mayo: write('mayo');
+        junio: write('junio');
+        julio: write('julio');
+        agosto: write('agosto');
+        septiembre: write('septiembre');
+        octubre: write('octubre');
+        noviembre: write('noviembre');
+        diciembre: write('diciembre');
+    end;
 
 end;
 
