@@ -11,7 +11,7 @@ begin
 
     Write('Ingrese un mes: ');
     Read (mes);
-    case of mes do
+    case mes of
         enero: write('enero');
         febrero: write('febrero');
         marzo: write('marzo');
