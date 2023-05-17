@@ -37,7 +37,7 @@ begin
 
     write ('Ingrese un mes del 1 al 12: ');
     read (numeromes);
-    Writeln('El mes ingresado fue: ', mes(numeromes-1));
+    Write ('El mes ingresado fue: ', mes(numeromes-1));
 
 end;
 
@@ -48,5 +48,6 @@ begin
     MostrarMes (unmes);
     Writeln;
     MostrarMesPorNumero(TipoMesRango);
+    Writeln
 
 end.
