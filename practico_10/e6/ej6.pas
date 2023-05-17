@@ -61,7 +61,7 @@ begin
 
     MostrarMes (unmes);
     Writeln;
-    MostrarMesPorNumero(numeromes);
+    MostrarMesPorNumero(unmes);
     Writeln
 
 end.
