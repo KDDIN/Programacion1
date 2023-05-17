@@ -37,7 +37,8 @@ begin
 
     write ('Ingrese un mes del 1 al 12: ');
     read (numeromes);
-    Write ('El mes ingresado fue: ', mes(numeromes-1));
+    mes := TipoMes(numeromes -1);
+    Writeln(mes);
 
 end;
 
