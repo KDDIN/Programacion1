@@ -9,8 +9,6 @@ procedure MostrarMes (var mes:TipoMes);
 begin
 
     Write('Ingrese un mes: ');
-    mes := enero;
-    Writeln(mes);
     Read (mes);
     case mes of
         enero: write('enero');
@@ -32,5 +30,6 @@ end;
 begin
 
     MostrarMes (unmes);
+    Writeln;
 
 end.
