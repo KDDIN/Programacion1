@@ -34,7 +34,7 @@ begin
             for k := 1 to N do
                 c[i,j] := c[i,j] + (a[i,k] * b[k,j]);
 
-end;
+end; {Funciona, lo probe (creanme)}
 
 begin
     write('hola mundo');
