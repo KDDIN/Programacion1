@@ -6,10 +6,11 @@ type
 var unmes:TipoMes;
 
 procedure MostrarMes (var mes:TipoMes);
-var numeromes: integer;
 begin
 
     Write('Ingrese un mes: ');
+    mes := enero;
+    Writeln(mes);
     Read (mes);
     case mes of
         enero: write('enero');
