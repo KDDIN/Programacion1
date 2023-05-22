@@ -53,11 +53,15 @@ end;
 
 {El primer salon sin asientos}
 function primerSalonSinAsientos (facu: TFacultad) : Integer;
-var cantAsientos : 0..1000;
+var indiceAsientos : 0..1000;
     i:1..CANT_SALONES;
 begin
 
-    
+    indiceAsientos := 0;
+
+    for i := CANT_SALONES downto 1 do
+        if facu[i].asientos = 0 do
+            indiceAsientos := i;
 
 end;
 
