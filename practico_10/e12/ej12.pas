@@ -67,3 +67,32 @@ begin
 
 end;
 
+{(extra) procedimiento para imprimir un articulo cualquiera}
+procedure imprimirarticulo(articulo:Tarticulo);
+begin
+
+    with articulo do
+        Write(nombre,' - ',idioma,' - ',visitas,' - ',ultima_act);
+    Writeln;
+
+end;
+
+{procedimiento para imprimir el articulo mas reciente en un idioma especifico}
+procedure imprimirArticulosMasRecientes (wiki: Wikipedia):
+var i:1..cant_articulos;
+    articulo : Tarticulo;
+begin
+
+    Writeln('El articulo mas reciente en español es: ');
+    articuloMasReciente(wiki,es,articulo);
+    imprimirarticulo(articulo);
+    
+    Writeln('El articulo mas reciente en ingles es: ');
+    articuloMasReciente(wiki,en,articulo);
+    imprimirarticulo(articulo);
+
+    Writeln('El articulo mas reciente en portugues es: ');
+    articuloMasReciente(wiki,pt,articulo);
+    imprimirarticulo(articulo);
+
+end;
