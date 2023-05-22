@@ -51,14 +51,19 @@ end;
 
 {procedimiento para ver el articulo mas reciente de un idioma especifico}
 procedure articuloMasReciente (wiki: wikipedia; idioma; Tidioma; VAR art: Tarticulo);
-var i:1..cant_articulos;
+var i,j:1..cant_articulos;
 begin
     
-    for i := 2 to cant_articulos do
-    begin
+    j := 1;
+    repeat 
+        art := wiki[1]; {supongo que esto funciona, no estoy seguro y no puedo probarlo ._. (tengo fe)}
+        j := j+1;
+    until wiki[j].idioma = idioma;
 
-      if (wiki[i-1] and ) 
-
-    end;
+    if cant_articulos > 1 then
+        for i := 2 to cant_articulos do
+            if (wiki[i-1].idioma = idioma) and (wiki[i].ultima_act > wiki[i-1].ultima_act) then
+                art := wiki[i]; 
 
 end;
+
