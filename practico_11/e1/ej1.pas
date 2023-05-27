@@ -25,15 +25,30 @@ var
 
 begin
 
-    {grupo[1].nombre := 'juanita'; 
-    writeln(grupo[1].nombre);} {No funciona}
+    {I}
+    grupo[1] := juanita; {valido}
 
-    {read (grupo[1].estado);} {valido}
+    {II}
+    grupo[1].nombre := 'juanita'; {invalido}
 
+    {III}
+    read (grupo[1].estado); {valido}
+
+    {IV}
+    with grupo do writeln (nombre) {invalido (teoricamente)}
+
+    {V}
     with grupo[100] do
     begin
         read (edad);
-    end;
+    end; {valido}
+
+    {VI}
+    with juanita do
+    begin
+        nombre := grupo[50].nombre;
+        salario := grupo[1].salario;
+    end; {Valido (teoricamente)}
 
 
 end.
