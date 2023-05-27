@@ -59,7 +59,7 @@ begin
 
     indiceAsientos := 0;
 
-    for i := CANT_SALONES downto 1 do
+    for i := CANT_SALONES downto 1 do {realmente seria con while pero bueno}
         if facu[i].asientos = 0 do
             indiceAsientos := i;
 
