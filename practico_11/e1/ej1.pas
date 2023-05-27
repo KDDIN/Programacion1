@@ -20,7 +20,7 @@ end;
 
 var
     juanita : Persona;
-    grupo : array [1..CANT_PERS] of Persona
+    grupo : array [1..CANT_PERS] of Persona;
 
 
 begin
