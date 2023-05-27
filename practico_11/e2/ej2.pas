@@ -63,3 +63,4 @@ end;
 
 {Procedimiento para mostrar los antepasados de alguien}
 procedure antepasados (usted : Cadena; historia : Familia);
+{otro dia sera}
