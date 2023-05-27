@@ -6,8 +6,8 @@ const
 
 type
     Cadena = record
-    letras : array [1..MAX_CADENA] of char;
-    largo : 0..MAX_CADENA;
+        letras : array [1..MAX_CADENA] of char;
+        largo : 0..MAX_CADENA;
 end;
 
 Persona = record
@@ -25,7 +25,10 @@ var
 
 begin
 
-    grupo[1].nombre := 'juanita';
-    writeln(grupo[1].nombre);
+    {grupo[1].nombre := 'juanita'; 
+    writeln(grupo[1].nombre);} {No funciona}
+
+    read (grupo[1].estado);
+
 
 end.
