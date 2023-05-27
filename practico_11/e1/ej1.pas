@@ -28,7 +28,12 @@ begin
     {grupo[1].nombre := 'juanita'; 
     writeln(grupo[1].nombre);} {No funciona}
 
-    read (grupo[1].estado);
+    {read (grupo[1].estado);} {valido}
+
+    with grupo[100] do
+    begin
+        read (edad);
+    end;
 
 
 end.
