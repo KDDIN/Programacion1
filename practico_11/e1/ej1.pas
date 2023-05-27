@@ -1,8 +1,8 @@
 program P11Ej1;
 
 const
-    CANT_PERS = ... ;{valor entero mayor estricto a 0}
-    MAX_CADENA = ... ;{valor entero mayor estricto a 0}
+    CANT_PERS = 100 ;{valor entero mayor estricto a 0}
+    MAX_CADENA = 100 ;{valor entero mayor estricto a 0}
 
 type
     Cadena = record
