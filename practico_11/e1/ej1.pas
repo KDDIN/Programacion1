@@ -8,7 +8,7 @@ type
     Cadena = record
         letras : array [1..MAX_CADENA] of char;
         largo : 0..MAX_CADENA;
-end;
+    end;
 
 Persona = record
     nombre : Cadena;
